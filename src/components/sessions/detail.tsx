@@ -258,7 +258,7 @@ const SessionDetailComponent = (props: Props)=>{
             <Accordion.Content>
             {
                 props.data.task.data.length > 0 ? (                                                             
-                    props.data.task.data.map((item:any, index:number)=>{
+                    props.data.task.data.map((item:any, index:name)=>{
                         return(
 
                             <tr style={{ width:"100%",display: "block" }}  key={`${index}name`} className="text-center">
@@ -331,7 +331,7 @@ const SessionDetailComponent = (props: Props)=>{
 
             <div style={{ width:"100%", textAlign:"center",display: "flex"  }}>
                 <div  style={{ width:"92%", textAlign:"left",display: "flex" }}>
-                &nbsp;Witness 1c
+                &nbsp;Witness 1
                 </div>
 
 
@@ -355,18 +355,20 @@ const SessionDetailComponent = (props: Props)=>{
                             {      (item.name.split("-")[0] === "Witness" && item.name.split("-")[1] === "1") && ( 
                                     
                                 <div> 
+                                    <ul>
                                     <td style={{ width:"80%", textAlign:"left" }}> 
-                                { item.name === "Witness-1-1" && (<div>1. Question 1 </div>)} 
-                                { item.name === "Witness-1-2" && (<div>2. Question 2  </div>)} 
-                                { item.name === "Witness-1-3" && (<div>3. Question 3  </div>)} 
-                                { item.name === "Witness-1-4" && (<div>4. Question 4  </div>)} 
-                                { item.name === "Witness-1-5" && (<div>5. Question 5  </div>)} 
-                                { item.name === "Witness-1-6" && (<div>6. Question 6  </div>)} 
-                                
+                                { item.name === "Witness-1-1" && (<li>1. Question 1 </li>)} 
+                                { item.name === "Witness-1-2" && (<li>2. Question 2  </li>)} 
+                                { item.name === "Witness-1-3" && (<li>3. Question 3  </li>)} 
+                                { item.name === "Witness-1-4" && (<li>4. Question 4  </li>)} 
+                                { item.name === "Witness-1-5" && (<li>5. Question 5  </li>)} 
+                                { item.name === "Witness-1-6" && (<li>6. Question 6  </li>)} 
+                            
                                 </td>
 
                                 {  item.status === "Completed" ? ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="success"><Chip.Label >Completed</Chip.Label></Chip></td> ) :
                                     ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="warning"><Chip.Label >Incomplete</Chip.Label></Chip></td> )
+                                    </ul>
                                     }
                                 </div> 
                                 
@@ -438,19 +440,21 @@ const SessionDetailComponent = (props: Props)=>{
                                 {      (item.name.split("-")[0] === "Witness" && item.name.split("-")[1] === "2") && ( 
                                         
                                     <div> 
-                                        <td style={{ width:"80%", textAlign:"left" }}> 
-                                    { item.name === "Witness-2-1" && (<div>1. Question 1 </div>)} 
-                                    { item.name === "Witness-2-2" && (<div>2. Question 2  </div>)} 
-                                    { item.name === "Witness-2-3" && (<div>3. Question 3  </div>)} 
-                                    { item.name === "Witness-2-4" && (<div>4. Question 4  </div>)} 
-                                    { item.name === "Witness-2-5" && (<div>5. Question 5  </div>)} 
-                                    { item.name === "Witness-2-6" && (<div>6. Question 6  </div>)} 
+                                     
+                                            <ul>
+                                    { item.name === "Witness-2-1" && (<li>1. Question 1 </li>)} 
+                                    { item.name === "Witness-2-2" && (<li>2. Question 2  </li>)} 
+                                    { item.name === "Witness-2-3" && (<li>3. Question 3  </dli>)} 
+                                    { item.name === "Witness-2-4" && (<li>4. Question 4  </li>)} 
+                                    { item.name === "Witness-2-5" && (<li>5. Question 5  </li>)} 
+                                    { item.name === "Witness-2-6" && (<li>6. Question 6  </li>)} 
+                                 
                                     
-                                    </td>
 
                                     {  item.status === "Completed" ? ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="success"><Chip.Label >Completed</Chip.Label></Chip></td> ) :
                                         ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="warning"><Chip.Label >Incomplete</Chip.Label></Chip></td> )
                                         }
+                                           </ul>
                                     </div> 
                                     
                                         ) 
