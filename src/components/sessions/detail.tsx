@@ -258,7 +258,7 @@ const SessionDetailComponent = (props: Props)=>{
             <Accordion.Content>
             {
                 props.data.task.data.length > 0 ? (                                                             
-                    props.data.task.data.map((item:any, index:name)=>{
+                    props.data.task.data.map((item:any, index:number)=>{
                         return(
 
                             <tr style={{ width:"100%",display: "block" }}  key={`${index}name`} className="text-center">
@@ -357,12 +357,12 @@ const SessionDetailComponent = (props: Props)=>{
                                 <div> 
                                     <ul>
                                     <td style={{ width:"80%", textAlign:"left" }}> 
-                                { item.name === "Witness-1-1" && (<li>1. Question 1 </li>)} 
-                                { item.name === "Witness-1-2" && (<li>2. Question 2  </li>)} 
-                                { item.name === "Witness-1-3" && (<li>3. Question 3  </li>)} 
-                                { item.name === "Witness-1-4" && (<li>4. Question 4  </li>)} 
-                                { item.name === "Witness-1-5" && (<li>5. Question 5  </li>)} 
-                                { item.name === "Witness-1-6" && (<li>6. Question 6  </li>)} 
+                                { item.name === "Witness-1-1" && (<li >{item.index}1. Question 1 </li>)} 
+                                { item.name === "Witness-1-2" && (<li>{item.index}2. Question 2  </li>)} 
+                                { item.name === "Witness-1-3" && (<li>{item.index}3. Question 3  </li>)} 
+                                { item.name === "Witness-1-4" && (<li>{item.index}4. Question 4  </li>)} 
+                                { item.name === "Witness-1-5" && (<li>{item.index}5. Question 5  </li>)} 
+                                { item.name === "Witness-1-6" && (<li>{item.index}6. Question 6  </li>)} 
                             
                                 </td>
 
