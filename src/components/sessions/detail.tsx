@@ -443,11 +443,7 @@ const SessionDetailComponent = (props: Props)=>{
                                              { item.name === "Witness-2-5" && (<div>5. Question 5  </div>)} 
                                            { item.name === "Witness-2-4" && (<div>4. Question 4  </div>)} 
                                           { item.name === "Witness-2-3" && (<div>3. Question 3  </div>)} 
-                                        { item.name === "Witness-2-3" && (<div>3. Question 3  </div>)} 
-                                        { item.name === "Witness-2-3" && (<div>3. Question 3  </div>)} 
-                                       { item.name === "Witness-2-3" && (<div>3. Question 3  </div>)} 
-                                        { item.name === "Witness-2-3" && (<div>3. Question 3  </div>)} 
-                                         { item.name === "Witness-2-2" && (<div>2. Question 2  </div>)} 
+                                        { item.name === "Witness-2-2" && (<div>2. Question 2  </div>)} 
                                      { item.name === "Witness-2-1" && (<div>1. Question 1        </div>)} 
                                    
                               
