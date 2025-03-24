@@ -439,17 +439,22 @@ const SessionDetailComponent = (props: Props)=>{
                                         
                                     <div> 
                                         <td style={{ width:"80%", textAlign:"left" }}> 
-                                    { item.name === "Witness-2-1" && (<div>1. Question 1 </div>)} 
-                                    { item.name === "Witness-2-2" && (<div>2. Question 2  </div>)} 
-                                    { item.name === "Witness-2-3" && (<div>3. Question 3  </div>)} 
-                                    { item.name === "Witness-2-4" && (<div>4. Question 4  </div>)} 
-                                    { item.name === "Witness-2-5" && (<div>5. Question 5  </div>)} 
-                                    { item.name === "Witness-2-6" && (<div>6. Question 6  </div>)} 
+                                    { item.name === "Witness-2-1" && (<div>1. Question 1         item.status === "Completed" ? ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="success"><Chip.Label >Completed</Chip.Label></Chip></td> ) :
+                                        ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="warning"><Chip.Label >Incomplete</Chip.Label></Chip></td> ) </div>)} 
+                                    { item.name === "Witness-2-2" && (<div>2. Question 2   item.status === "Completed" ? ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="success"><Chip.Label >Completed</Chip.Label></Chip></td> ) :
+                                        ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="warning"><Chip.Label >Incomplete</Chip.Label></Chip></td> )  </div>)} 
+                                    { item.name === "Witness-2-3" && (<div>3. Question 3   item.status === "Completed" ? ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="success"><Chip.Label >Completed</Chip.Label></Chip></td> ) :
+                                        ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="warning"><Chip.Label >Incomplete</Chip.Label></Chip></td> ) </div>)} 
+                                    { item.name === "Witness-2-4" && (<div>4. Question 4    item.status === "Completed" ? ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="success"><Chip.Label >Completed</Chip.Label></Chip></td> ) :
+                                        ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="warning"><Chip.Label >Incomplete</Chip.Label></Chip></td> )</div>)} 
+                                    { item.name === "Witness-2-5" && (<div>5. Question 5   item.status === "Completed" ? ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="success"><Chip.Label >Completed</Chip.Label></Chip></td> ) :
+                                        ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="warning"><Chip.Label >Incomplete</Chip.Label></Chip></td> ) </div>)} 
+                                    { item.name === "Witness-2-6" && (<div>6. Question 6    item.status === "Completed" ? ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="success"><Chip.Label >Completed</Chip.Label></Chip></td> ) :
+                                        ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="warning"><Chip.Label >Incomplete</Chip.Label></Chip></td> ) </div>)} 
                                     
                                     </td>
 
-                                    {  item.status === "Completed" ? ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="success"><Chip.Label >Completed</Chip.Label></Chip></td> ) :
-                                        ( <td style={{width:"20%", textAlign:"right"}}> <Chip size="sm"  color="warning"><Chip.Label >Incomplete</Chip.Label></Chip></td> )
+                                    {
                                         }
                                     </div> 
                                     
