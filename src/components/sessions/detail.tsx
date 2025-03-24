@@ -331,7 +331,7 @@ const SessionDetailComponent = (props: Props)=>{
 
             <div style={{ width:"100%", textAlign:"center",display: "flex"  }}>
                 <div  style={{ width:"92%", textAlign:"left",display: "flex" }}>
-                &nbsp;Witness 1a
+                &nbsp;Witness 1
                 </div>
 
 
